@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
     <title>p-project</title>
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css">  -->
+     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 </head>
 <body>
   <div class="contain" style="text-align:center;color: black" >
@@ -28,8 +26,9 @@
       <h2 style="color:white">Feeling hungry?place your order now!</h2>
       <p style="color:white">below you have more than one option for Pizza you would like to order in Pie Peddler shop:</p>
       <h3 style="color:white">Which size would you like?</h3>
+          <form id="house">
             <form action="/action_page.php">
-              <select name="size">
+              <select name="size"id="wendy">
                 <option value="size">size:</option>
                 <option value="small">small</option>
                 <option value="medium">medium</option>
@@ -41,7 +40,7 @@
             </form>
       <h3 style="color:white">What kind of crust do you like?</h3>
       <form action="/action_page.php">
-        <select name="size">
+        <select name="size"id="anitha">
           <option value="0">Kind of crust:</option>
           <option value="1">Fast food pizza</option>
           <option value="2">Cheese-stuffed crust</option>
@@ -58,7 +57,7 @@
       </form>  
       <h3 style="color:white">what's your favorite topping?</h3>    
       <form action="/action_page.php">
-        <select name="size">
+        <select name="size" id="rwaka">
           <option value="0">Toppings:</option>
           <option value="1">mushrooms</option>
           <option value="2">onions</option>
@@ -74,9 +73,13 @@
       </form> 
       <h3 style="color:white">How many pizzas do you want?</h3> 
       <form action="/action_page.php" style="color:white">
-        Quantity of your pizza: <input type="number" name="quantity" min="1" max="100">
-        <!-- <input type="submit"> -->
-      </form>
+        <select name="size" id="esther">
+         <input type="number" name="quantity" min="1" max="100"style="color: black"><br><br><br>
+         <input type="submit" id="submit" style="color: black">
+        </select>
+      </form><br><br><br><br>
+    </form>
+      <!-- <p id="house" style="text-align:center;font-size:20px"> :</p>  -->
     </div>
       <div class="container">
         <div class="row">
@@ -121,10 +124,6 @@
         </div>
       </div>
     </div>
-
-    <div class="anitha">
-      <p id="house" style="text-align:center;font-size:20px"> :</p>  
-  </div>
-    
+    <script src="js/script.js"></script> 
 </body>
 </html>
